@@ -15,14 +15,17 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 header {
-    background-color: #3498db; /* 青色メインのグラデーション */
+    background-color: #333;
     color: white;
     padding: 20px 0;
     text-align: center;
     font-size: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header nav ul {
@@ -47,7 +50,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #ecf0f1; /* ホバー時の色 */
+    color: #3498db;
 }
 
 main {
@@ -58,21 +61,22 @@ main {
 }
 
 .product {
-    width: 200px;
+    width: 300px;
     margin: 20px;
-    padding: 10px;
+    padding: 20px;
     border: 1px solid #ccc;
     text-align: center;
-    background-color: white;
+    background-color: #fff;
     transition: transform 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .product:hover {
-    transform: translateY(-5px); /* ホバー時に少し浮かせる */
+    transform: translateY(-5px);
 }
 
 footer {
-    background-color: #3498db; /* 青色メインのグラデーション */
+    background-color: #333;
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -80,34 +84,4 @@ footer {
     bottom: 0;
     width: 100%;
     font-size: 0.8rem;
-}
-
-footer p {
-    margin: 0;
-}
-
-@media (max-width: 768px) {
-    .container {
-        padding: 0 10px;
-    }
-
-    header {
-        padding: 15px 0;
-        font-size: 1.5rem;
-    }
-
-    main {
-        margin-top: 10px;
-    }
-
-    .product {
-        width: 150px;
-        margin: 10px;
-        padding: 8px;
-    }
-
-    footer {
-        padding: 15px 0;
-        font-size: 0.7rem;
-    }
 }
