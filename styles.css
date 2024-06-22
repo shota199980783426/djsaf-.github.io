@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Times New Roman', serif;
+    font-family: 'Arial', sans-serif;
     background-color: #f5f5f5;
     color: #333;
     line-height: 1.6;
@@ -20,7 +20,7 @@ body {
 header {
     background-color: #3498db; /* 青色メインのグラデーション */
     color: white;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
     font-size: 2rem;
 }
@@ -43,6 +43,11 @@ header nav ul li:last-child {
 header nav ul li a {
     color: white;
     text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ecf0f1; /* ホバー時の色 */
 }
 
 main {
@@ -58,14 +63,51 @@ main {
     padding: 10px;
     border: 1px solid #ccc;
     text-align: center;
+    background-color: white;
+    transition: transform 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-5px); /* ホバー時に少し浮かせる */
 }
 
 footer {
     background-color: #3498db; /* 青色メインのグラデーション */
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
+    font-size: 0.8rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    header {
+        padding: 15px 0;
+        font-size: 1.5rem;
+    }
+
+    main {
+        margin-top: 10px;
+    }
+
+    .product {
+        width: 150px;
+        margin: 10px;
+        padding: 8px;
+    }
+
+    footer {
+        padding: 15px 0;
+        font-size: 0.7rem;
+    }
 }
